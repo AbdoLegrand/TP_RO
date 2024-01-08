@@ -10,24 +10,23 @@ def EX03():
     X = []
     aliment = 2
     mp = 3
-    D = [9000,12000]
+    D = [9000, 12000]
     protein = []
     for i in range(2, 5):
         protein.append(ws.cell(2, i).value)
-    print(protein)    
- 
-    lipide=[]
-    for i in range(2,5):
+
+    lipide = []
+    for i in range(2, 5):
         lipide.append(ws.cell(3,i).value)
-    glucide=[]
+    glucide = []
     for i in range(2,5):
         glucide.append(ws.cell(4,i).value)
     
-    stocks=[]
+    stocks = []
     for i in range(2,5):
         stocks.append(ws.cell(9,i).value)
     
-    prix=[]
+    prix = []
     for i in range(2,5):
          prix.append(ws.cell(10,i).value)
     
@@ -39,8 +38,6 @@ def EX03():
         X.append(U)
     print('Number of variable =', solver.NumVariables())
 
-    print(X)
-    # le probleme est l'equation objective
     objective = solver.Objective()
     for i in range (mp):
         for j in range(aliment):
