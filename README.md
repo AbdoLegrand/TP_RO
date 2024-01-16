@@ -1,4 +1,4 @@
-# TP_RO
+# TPs
 
 …or create a new repository on the command line
 echo "# TP_RO" >> README.md
